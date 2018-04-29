@@ -12,7 +12,7 @@ const websitePath = path.join(__dirname, WEBSITE_FOLDER)
 app.use(express.static(websitePath))
 
 // start the web server listening on a port
-const port = express.env.PORT || DEFAULT_PORT
+const port = process.env.PORT || DEFAULT_PORT
 app.listen(port)
 
 console.log(`Server listening at port ${port}`)
