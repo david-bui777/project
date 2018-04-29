@@ -6,9 +6,18 @@ const path = require('path')
 // Create app variable and setting it equals to express function 
 // The express function to create the server 
 const app = express()
+
 // Create a port variable and setting it equals to the value of 3000
 // This is the port the web server use
 const port = 3000
+const WEBSITE = 'website'
+
+//Body Parser Middleware
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended: false}))
+
+// set static path
+app.use(express.static(path.join(__dirname, WEBSITE)))
 
 /**
  * Using the app variable to access the get function
