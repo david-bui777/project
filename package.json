@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/david-bui777/project/issues"
   },
-  "homepage": "https://github.com/david-bui777/project#readme"
+  "homepage": "https://github.com/david-bui777/project#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
