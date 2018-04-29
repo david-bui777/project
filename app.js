@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, WEBSITE)))
  * the second parameter is the callback function which also takes in two paramters
  * the first is request and the second is the response
  */
-app.get('/', (request, response) =>{
+app.get(WEBSITE, (request, response) =>{
     response.send('hello world')
 })
 
